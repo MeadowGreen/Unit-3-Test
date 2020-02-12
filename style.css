@@ -1,15 +1,48 @@
+@keyframes colors {
+    0%{ 
+        background-color: rgb(212, 188, 252);
+    }
+    20%{ 
+        background-color: rgb(185, 149, 241);
+    }
+    40%{ 
+        background-color: rgb(180, 139, 247);
+    }
+    60%{ 
+        background-color: rgb(150, 111, 212);
+    }
+    80%{ 
+        background-color: rgb(118, 79, 180);
+    }
+    100%{ 
+        background-color: rgb(108, 56, 190);
+    }
+}
+
 form p{
     float: left;
     width: 50%;
 }
 body{
     vertical-align: middle;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(8, 138, 138);
+    height: 820px;
+    border-left: black 7px solid;
+    border-right: black 7px solid;
+    box-shadow: black 0px 0px 25px;
 }
 html{
-    background: radial-gradient( aqua, teal, black);
+    background-color: white;
     color: white;
     height: 100%;
     text-align: center;
+    background-image: url(color.jpg);
+    background-size: cover;
+    
 }
 input{
     background-color: rgb(233, 164, 16);
@@ -20,15 +53,26 @@ input{
 }
 
 button{
-    background-color: rgb(219, 146, 50);
+    background-color: rgb(108, 56, 190);
     color:  (41, 23, 0);
-    border: 2px solid  black;
+    border: 3px dotted  black;
     margin: 2px;
-    font-size: 15px;
+    font-size: 25px;
     box-shadow: indigo 3px 3px 3px;
+    animation: colors  5s infinite alternate ;
 }
 form, p{
-    color:rgb(236, 178, 71);
-    font-size: 20px;
-    text-shadow: black 2px 2px 2px;
+    color:white;
+    font-size: 35px;
+    text-shadow: grey 2px 2px 2px;
+}
+
+
+div#input{
+    border: black 5px solid;
+}
+div#all{
+    padding-top: 100px;
+    text-align: center;
+    
 }
